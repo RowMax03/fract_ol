@@ -6,7 +6,7 @@
 /*   By: mreidenb <mreidenb@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/11 16:25:22 by mreidenb          #+#    #+#             */
-/*   Updated: 2023/05/11 22:58:23 by mreidenb         ###   ########.fr       */
+/*   Updated: 2023/05/12 13:57:09 by mreidenb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,5 +61,8 @@ void		draw_line(int x0, int y0, int x1, int y1, int color, void *img_ptr);
 int 		key_hook(struct mlx_key_data *key_data, void *param);
 int			mouse_hook(int button, int x, int y, void *param);
 uint32_t	generate_colors(int iterations, int max_iterations, t_data *data);
+void		zoom_in(t_data *data);
+void		zoom_out(t_data *data);
+void		my_scrollhook(double xdelta, double ydelta, void* param);
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: mreidenb <mreidenb@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/11 16:23:30 by mreidenb          #+#    #+#             */
-/*   Updated: 2023/05/11 22:58:50 by mreidenb         ###   ########.fr       */
+/*   Updated: 2023/05/12 13:57:19 by mreidenb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -140,6 +140,7 @@ int main()
 	data = init_data(mlx_ptr, win_ptr);
 	mlx_image_to_window(data->mlx_ptr, data->win_ptr, 0, 0);
 	mlx_loop_hook(mlx_ptr, &ft_hook, &data);
+	mlx_scroll_hook(data->mlx_ptr, &my_scrollhook, data);
 	// Draw the Mandelbrot set
 	draw_fractal(data);
 	mlx_loop(mlx_ptr);

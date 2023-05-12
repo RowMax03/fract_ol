@@ -1,7 +1,7 @@
 NAME = fractol
 
 SRC =	fractol.c meth.c\
-		src/colors.c
+		src/colors.c src/zoom.c src/captain_hook.c
 
 OBJ = $(SRC:.c=.o)
 
