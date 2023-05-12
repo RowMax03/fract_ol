@@ -8,7 +8,7 @@ OBJ = $(SRC:.c=.o)
 
 FLAGS = -Wall -Wextra -Werror
 
-LIBS = ./MLX42/build/libmlx42.a -lglfw -L "/Users/mreidenb/homebrew/opt/glfw/lib"
+LIBS = ./MLX42/build/libmlx42.a -lglfw -L "/Users/$(USER)/homebrew/opt/glfw/lib"
 
 LIBFT =	./includes/libft/libft.a
 
